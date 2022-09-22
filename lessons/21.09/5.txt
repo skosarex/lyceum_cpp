@@ -1,0 +1,25 @@
+﻿#include <iostream>
+
+using namespace std;
+
+int main() {
+    //ренат скосарев
+    float x1, y1, x2, x3, y3, x4;
+    cout << "Введи координаты x1, y1, x2, x3, y3, x4" << endl;
+    cin >> x1 >> y1 >> x2 >> x3 >> y3 >> x4;
+    if (x3 < x2) {
+        int square;
+        // пересекаются
+        if (y1 > y3) {
+            square = y3 * (x2 - x3);
+        } else {
+            square = y1 * (x2 - x3);
+        }
+        cout << "Прямоугольнки пересекаются" << endl;
+        cout << "Площадь пересечения: "<< square;
+    } else {
+        // не пересекаются
+        cout << "Прямоугольнки не пересекаются" << endl;
+    }
+    return 0;
+}

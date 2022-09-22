@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    //ренат скосарев
+    long double num;
+    int d1, d2, d3;
+    cin >> num;
+    d1 = int(num * 10) % 10;
+    d2 = int(num * 100) % 10;
+    d3 = int(num * 1000) % 10;
+    cout << (d1 == 0 || d2 == 0 || d3 == 0);
+    return 0;
+}
